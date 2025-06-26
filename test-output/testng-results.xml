@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-20T11:05:20 IST" name="Suite" finished-at="2025-06-20T11:05:44 IST" duration-ms="24236">
+    <groups>
+    </groups>
+    <test started-at="2025-06-20T11:05:20 IST" name="Test" finished-at="2025-06-20T11:05:44 IST" duration-ms="24236">
+      <class name="tests.ValidLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ValidLoginTest@4218d6a3]" started-at="2025-06-20T11:05:20 IST" name="setUp" finished-at="2025-06-20T11:05:24 IST" duration-ms="4116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.ValidLoginTest@4218d6a3]" started-at="2025-06-20T11:05:24 IST" name="testLogin" data-provider="Logindata" finished-at="2025-06-20T11:05:44 IST" duration-ms="19655" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[psshishira56@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Amazon@1992]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <input class="a-button-input" type="submit"> is not clickable at point (126,621) because another element <span id="checkout-primary-continue-button-id-announce" class="a-button-text"> obscures it
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cd070af1-2612-4a3f-8c33-52143daf97aa, clickElement {id=8440afe7-47c1-4370-9a8c-0a8d95f18cca}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.1, moz:accessibilityChecks: false, moz:buildID: 20250529122813, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 17773, moz:profile: /var/folders/r4/891x7my55js..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (cd070af1-2612-4a3f-8c33-52143daf97aa)] -> xpath: //input[@aria-labelledby='checkout-primary-continue-button-id-announce']]
+Session ID: cd070af1-2612-4a3f-8c33-52143daf97aa]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <input class="a-button-input" type="submit"> is not clickable at point (126,621) because another element <span id="checkout-primary-continue-button-id-announce" class="a-button-text"> obscures it
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cd070af1-2612-4a3f-8c33-52143daf97aa, clickElement {id=8440afe7-47c1-4370-9a8c-0a8d95f18cca}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.1, moz:accessibilityChecks: false, moz:buildID: 20250529122813, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 17773, moz:profile: /var/folders/r4/891x7my55js..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (cd070af1-2612-4a3f-8c33-52143daf97aa)] -> xpath: //input[@aria-labelledby='checkout-primary-continue-button-id-announce']]
+Session ID: cd070af1-2612-4a3f-8c33-52143daf97aa
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at Pages.PaymentPage.placeOrder(PaymentPage.java:50)
+at tests.ValidLoginTest.testLogin(ValidLoginTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ValidLoginTest@4218d6a3]" started-at="2025-06-20T11:05:44 IST" name="tearDown" finished-at="2025-06-20T11:05:44 IST" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ValidLoginTest -->
+      <class name="tests.InvalidLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.InvalidLoginTest@5542c4ed]" started-at="2025-06-20T11:05:20 IST" name="setUp" finished-at="2025-06-20T11:05:24 IST" duration-ms="3940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testinvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.InvalidLoginTest@5542c4ed]" started-at="2025-06-20T11:05:24 IST" name="testinvalidLogin" data-provider="Logindata1" finished-at="2025-06-20T11:05:25 IST" duration-ms="782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.InvalidLoginTest@5542c4ed]" started-at="2025-06-20T11:05:25 IST" name="tearDown" finished-at="2025-06-20T11:05:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.InvalidLoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
